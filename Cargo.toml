@@ -6,14 +6,24 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+<<<<<<< HEAD
 bevy = {version = "0.12"}
 bevy-inspector-egui = "0.21.0"
 bevy_egui = "0.23"
+=======
+bevy = {version = "0.12", features = ["dynamic_linking"]}
+bevy-inspector-egui = "0.22"
+bevy_egui = "0.24"
+>>>>>>> 99c0dd01e730cbbf531467fa2d9ff6129f0f07da
 egui = "0.24"
-bevy_serialization_extras = { git = "https://github.com/rydb/bevy_serialization_extras", rev = "47b0bcd" }
+bevy_serialization_extras = "0.3"
+bevy_serialization_urdf = "0.1"
 bevy_camera_extras = "0.1.6"
 bevy_component_extras = "*"
-bevy_ui_extras = "0.3"
+bevy_ui_extras = "0.4.1"
+bevy_rapier3d = "0.23"
+strum = "0.26"
+strum_macros = "0.26"
 
 #bevy_flycam = "0.12"
 
