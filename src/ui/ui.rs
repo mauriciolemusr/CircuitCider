@@ -283,7 +283,7 @@ pub fn spawn_start_menu(
                 .with_children(|parent| {
                     parent.spawn((
                         TextBundle::from_section(
-                        "Arena",
+                        "start",
                         TextStyle {
                             font: asset_server.load("TauroCondensed-eZrGB.ttf"),
                             font_size: (40.0),

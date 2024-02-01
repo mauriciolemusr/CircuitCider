@@ -28,7 +28,7 @@ fn main() {
 
         //Intro into bevy_serialziation demo
         .add_plugins(
-            WorldInspectorPlugin::default().run_if(in_state(AppState::Editor)),
+            WorldInspectorPlugin::default().run_if(input_toggle_active(true, KeyCode::Escape)),
         )
         .add_systems(OnEnter(AppState::Editor), despawn_start_menu)
         .add_systems(OnEnter(AppState::Editor), serialization_demo_setup)
